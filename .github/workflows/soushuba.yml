@@ -5,7 +5,9 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 21 * * *'
-
+permissions:
+  actions: write
+  contents: write
 jobs:
   run:
     runs-on: ubuntu-latest
